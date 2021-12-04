@@ -122,7 +122,7 @@ sr.reveal(
            .discover__container,
            .experience__data, .experience__overlay,
            .place__card,
-           .sponsor__content,
+           .healt__content,
            .footer__data, .footer__rights`,
   {
     origin: 'top',
@@ -132,8 +132,7 @@ sr.reveal(
 
 sr.reveal(
   `.about__data, 
-           .video__description,
-           .subscribe__description`,
+           .video__description`,
   {
     origin: 'left',
   }
@@ -141,8 +140,7 @@ sr.reveal(
 
 sr.reveal(
   `.about__img-overlay, 
-           .video__content,
-           .subscribe__form`,
+           .video__content`,
   {
     origin: 'right',
     interval: 100,

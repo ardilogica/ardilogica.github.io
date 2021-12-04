@@ -426,6 +426,18 @@ input {
   transform: var(--img-scale);
 }
 
+.mempelai_cwe {
+  float: left;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+.mempelai_cwo {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+
 /*=============== DISCOVER ===============*/
 .discover__card {
   position: relative;
@@ -473,7 +485,7 @@ input {
 
 #save-the-date {
   font-family: 'Dancing Script', cursive;
-  font-size: 3vw;
+  font-size: 6vw;
 }
 
 h2 a:hover {
@@ -591,55 +603,37 @@ h2 a:hover {
   padding: 0.75rem 1rem;
 }
 
-/*=============== SUBSCRIBE ===============*/
-.subscribe__bg {
-  background-color: var(--first-color-second);
-  padding: 2.5rem 0;
-}
-
-.subscribe__title,
-.subscribe__description {
-  color: var(--white-color);
-}
-
-.subscribe__description {
-  text-align: center;
-  margin-bottom: var(--mb-2-5);
-}
-
-.subscribe__form {
-  background-color: var(--input-color);
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.subscribe__input {
-  width: 70%;
-  padding-right: 0.5rem;
-  background-color: var(--input-color);
-  color: var(--text-color);
-}
-
-.subscribe__input::placeholder {
-  color: var(--text-color);
-}
-
-/*=============== SPONSORS ===============*/
-.sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+/*=============== HEALT PROTOCOL ===============*/
+.healt__container {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-items: center;
   row-gap: 3.5rem;
 }
 
-.sponsor__content:hover .sponsor__img {
+.healt__content:hover .healt__img {
   filter: invert(0.5);
 }
 
-.sponsor__img {
+.healt__img {
   width: 90px;
   filter: invert(0.7);
   transition: var(--img-transition);
+}
+
+/* =========== MAP ============================ */
+.mapouter {
+  position: relative;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  height: 300px;
+  width: 900px;
 }
 
 /*=============== FOOTER ===============*/
@@ -755,6 +749,32 @@ h2 a:hover {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
+@media screen and (max-width: 568px) {
+  .mapouter {
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    height: 250px;
+    width: 350px;
+  }
+
+  #gmap_canvas {
+    height: 250px;
+    width: 350px;
+  }
+
+  #footer {
+    padding-top: 0px;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .place__container {
     grid-template-columns: max-content;
@@ -777,9 +797,30 @@ h2 a:hover {
   .video__container {
     padding: 0;
   }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+  }
+
+  #gmap_canvas {
+    height: 200px;
+    width: 300px;
+  }
 }
 
 /* For medium devices */
+
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
@@ -788,10 +829,6 @@ h2 a:hover {
   }
   .place__container {
     grid-template-columns: repeat(3, max-content);
-  }
-  .subscribe__form {
-    width: 470px;
-    margin: 0 auto;
   }
 }
 
@@ -848,6 +885,10 @@ h2 a:hover {
   .section {
     padding: 7rem 0 2rem;
   }
+
+  #footer {
+    padding: 1rem 0 2rem;
+  }
   .home__container {
     height: 100vh;
     grid-template-rows: 1.8fr 0.5fr;
@@ -894,20 +935,29 @@ h2 a:hover {
   .experience__overlay:nth-child(2) {
     width: 160px;
   }
-  .subscribe__bg {
-    background: none;
-    padding: 0;
-  }
-  .subscribe__container {
-    background-color: var(--first-color-second);
-    padding: 3.5rem 0;
-  }
-  .subscribe__input {
-    padding: 0 0.5rem;
-  }
   .footer__rights {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    height: 300px;
+    width: 700px;
+  }
+
+  #gmap_canvas {
+    height: 300px;
+    width: 700px;
   }
 }
 
@@ -977,6 +1027,26 @@ h2 a:hover {
   }
   .footer__content {
     justify-items: center;
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .gmap_canvas {
+    overflow: hidden;
+    height: 300px;
+    width: 1000px;
+  }
+
+  #gmap_canvas {
+    height: 300px;
+    width: 1000px;
   }
 }
 
