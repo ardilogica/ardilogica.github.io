@@ -216,3 +216,13 @@ var x = setInterval(function () {
     fjs.parentNode.insertBefore(js, fjs);
   }
 })(document, 'script', 'weatherwidget-io-js');
+
+function play() {
+  var audio = document.getElementById('audio');
+  audio.play();
+  console.log('playyy audiooooo');
+}
+
+window.onload = function () {
+  play();
+};

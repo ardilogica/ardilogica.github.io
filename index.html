@@ -36,6 +36,9 @@
               <a href="#invitation" class="nav__link">Invitation</a>
             </li>
             <li class="nav__item">
+              <a href="#galery" class="nav__link">Galery</a>
+            </li>
+            <li class="nav__item">
               <a href="#map" class="nav__link">Map</a>
             </li>
           </ul>
@@ -55,8 +58,9 @@
       </nav>
     </header>
 
+
+     <!--==================== HOME ====================-->
     <main class="main">
-      <!--==================== HOME ====================-->
       <section class="home" id="home">
         <img src="assets/img/nikeardi.jpg" alt="" class="home__img" />
 
@@ -112,19 +116,59 @@
 
       <!--==================== INVITATION ====================-->
       <section class="invitation section" id="invitation">
-        <h1 class="section__title" id="name_couple">The Wedding</h1>
-        <!-- <div class="mempelai_cwe">
-          <div class="detail">
-           <h2>Nike Adriana</h2>
-           <div class="bio">Putri dari <br>alm Bapak Bambang Supriyanto & <br>Ibu Oetje sutiyasih</div>
-          </div>
-       </div>
-       <div class="mempelai_cwo">
-        <div class="detail">
-         <h2>Ardi Sandra</h2>
-         <div class="bio">Putra dari <br>Bapak Supardi  & <br>alm Ibu Karsih</div>
+        <div>
+          <h1 class="section__title" id="name_couple">The Wedding</h1>
         </div>
-     </div> -->
+        <div class="about_mempelai">
+          <div class="mempelai">
+            <div class="detail">
+              <h2>Nike Adriana</h2>
+              <div class="bio" >
+                <p>Putri ke 3 <br>alm Bapak Bambang Suprijanto & Ibu Oetje setiasih</p>
+              </div>
+            </div>
+          </div>
+           <div class="mempelai">
+             <div class="detail">
+                <h2>Ardi Sandra</h2>
+                <div class="bio">
+                  <p>Putra ke 2 <br>Bapak Supardi  & alm Ibu Karsih</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- <div>
+          <h4 class="section__title" id="name_couple">Event</h4>
+        </div> -->
+        <div class="event">
+          <div class="akad">
+            <h2>Akad</h2>
+            <div class="date_akad" >
+              <p>Saturday</p>
+              <p>10.00 - 13.00</p>
+            </div>
+          </div>
+          <div class="event_date">
+            <div class="event_month"><p>MARCH</p></div>
+            <div class="event_day"><p>26</p></div>
+            <div class="event_year"><p>2022</p></div>
+          </div>
+           <div class="ceremony">
+              <h2>Ceremony</h2>
+              <div class="date_ceremony">
+                <p>Saturday</p>
+                <p>10.00 - 13.00</p>
+              </div>
+            </div>
+        </div>
+        <div class="addres">
+          <p id="location">
+            <a href="https://www.google.com/maps/place/Masjid+Agung+Jawa+Tengah+(MAJT),+Jl.+Gajah+Raya,+Sambirejo,+Kec.+Gayamsari,+Kota+Semarang,+Jawa+Tengah+50166/@-6.9834607,110.4451271,17z/data=!4m2!3m1!1s0x2e708cb76c98241f:0x6afb73af24d41bf9">
+              <i class="ri-map-pin-line"></i>Masjid Agung Semarang</a><br>
+              Jl. Gajah Raya, Sambirejo, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50166
+          </p>
+        </div>
+        <div class="save_the_date">
         <h2 class="section__title" id="save-the-date">
           <a
             target="_blank"
@@ -135,19 +179,25 @@
             Save the date
           </a>
         </h2>
+      </div>
+        </div>
+        </div>
+     
+    </section>
 
         <div class="experience__container container grid">
           <div>
             <p id="demo-counter"></p>
           </div>
         </div>
+     
 
 
  <!--====================  Galery DISCOVER ====================-->
       
 
       <!--==================== PLACES ====================-->
-      <section class="galery">
+      <section class="galery" id="galery">
       <div class="discover__container container swiper-container">
         <div class="swiper-wrapper">
           <!--==================== DISCOVER 1 ====================-->
@@ -191,6 +241,8 @@
 
     <!--==================== VIDEO ====================-->
     <section class="video section">
+      <input type="button" value="PLAY" onfocus="play()">
+      <audio id="audio" src="assets/audio/audio.mp3" loop></audio>
       <h2 class="section__title">Short Video</h2>
 
       <div class="video__container container">
