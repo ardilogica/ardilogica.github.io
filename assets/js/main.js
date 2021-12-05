@@ -135,6 +135,7 @@ sr.reveal(
 
   {
     origin: 'bottom',
+    interval: 100,
   }
 );
 
@@ -144,6 +145,7 @@ sr.reveal(
 
   {
     origin: 'left',
+    interval: 100,
   }
 );
 
