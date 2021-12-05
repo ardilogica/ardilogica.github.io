@@ -123,7 +123,7 @@ sr.reveal(
            .experience__data, .experience__overlay,
            .place__card,
            .healt__content,
-           .footer__data, .footer__rights`,
+           .footer__data, .footer__rights, .event_date`,
   {
     origin: 'top',
     interval: 100,
@@ -131,8 +131,17 @@ sr.reveal(
 );
 
 sr.reveal(
+  `.akad, .ceremony, .addres`,
+
+  {
+    origin: 'bottom',
+  }
+);
+
+sr.reveal(
   `.about__data, 
-           .video__description`,
+           .video__description, .detail_cwe`,
+
   {
     origin: 'left',
   }
@@ -140,7 +149,7 @@ sr.reveal(
 
 sr.reveal(
   `.about__img-overlay, 
-           .video__content`,
+           .video__content, .detail_cwo`,
   {
     origin: 'right',
     interval: 100,

@@ -350,6 +350,7 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  /* font-family: 'Roboto'; */
 }
 
 .home__social {
