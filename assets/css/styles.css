@@ -451,7 +451,7 @@ input {
   font-family: 'Dancing Script', cursive;
   text-align: center;
   margin: auto;
-  font-size: 70px;
+  font-size: 47px;
 }
 
 .mempelai {
@@ -469,7 +469,7 @@ input {
   width: 40%;
 } */
 /* .bio {
-  font-size: 30px;
+  font-size: 3px;
 } */
 
 /* ================== Event ================ */
@@ -483,12 +483,12 @@ input {
   margin-top: 50px;
 }
 
-.event h2 {
-  /* font-family: 'Dancing Script', cursive;
+/* .event h2 {
+  font-family: 'Dancing Script', cursive;
   text-align: center;
   margin: auto;
-  font-size: 25px; */
-}
+  font-size: 25px;
+} */
 
 .bio {
   font-size: 15px;
@@ -509,9 +509,9 @@ input {
   /* background-color: red; */
 }
 
-.date_akad,
+/* .date_akad,
 .date_ceremony {
-}
+} */
 
 .event_date {
   /* background-color: yellow; */
@@ -603,11 +603,14 @@ h2 a:hover {
 }
 /*=============== Countdown Timer ===============*/
 .experience__container {
-  row-gap: 2.5rem;
+  /* row-gap: 2.5rem; */
   justify-content: center;
   justify-items: center;
-  font-family: 'Architects Daughter', cursive;
-  font-size: 3vw;
+  /* font-family: 'Roboto'; */
+  font-size: 1.5vw;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* background-color: red; */
 }
 
 /*=============== VIDEO ===============*/
@@ -874,7 +877,7 @@ h2 a:hover {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     margin: auto;
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .mempelai {
@@ -887,7 +890,7 @@ h2 a:hover {
   }
 
   .bio {
-    font-size: 8.5px;
+    font-size: 7px;
   }
 
   .event {
@@ -935,6 +938,13 @@ h2 a:hover {
 
   #footer {
     padding-top: 30px;
+  }
+
+  .experience__container {
+    font-size: 10px;
+    /* padding-top: 0px; */
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 }
 
