@@ -17,12 +17,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Wedding Invitation Ardi & Nike</title>
   </head>
   <body>
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#home" class="nav__logo" id="logo-name">Nike & Ardi</a>
+        <p class="btn btn-primary" onclick="toggleMusic()" id="btn-playback" data-play="false">
+          <i class="fa fa-music"></i>
+          <span id="btn-text"></span>
+        </p>
+        
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -74,7 +80,8 @@
                 With Love</b
               >
             </h1>
-            <!-- <a href="#invitation" class="button">Invite You</a> -->
+            <a href="#about" class="button" value="PLAY" onfocus="play()">Invite You</a>
+            <audio id="audio" src="assets/audio/audio.mp3" loop></audio>
           </div>
           <!-- <div class="home__social">
             <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
@@ -92,6 +99,10 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
+        <!-- <a href="#" class="act-btn" id=scrlbtn>
+          <i class="fa fa-music"></i>
+        </a> -->
+
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title about__title">Aku Ingin</h2>
@@ -124,7 +135,7 @@
             <div class="detail_cwe">
               <h2>Nike Adriana</h2>
               <div class="bio" >
-                <p>Putri ke 3 <br>alm Bapak Bambang Suprijanto & Ibu Oetje Setiasih</p>
+                <p>Putri ke 3 <br>Bapak Bambang Suprijanto (alm) & Ibu Oetje Setiasih</p>
               </div>
             </div>
           </div>
@@ -132,7 +143,7 @@
              <div class="detail_cwo">
                 <h2>Ardi Sandra</h2>
                 <div class="bio">
-                  <p>Putra ke 2 <br>Bapak Supardi  & almh Ibu Karsih</p>
+                  <p>Putra ke 2 <br>Bapak Supardi  &  Ibu Karsih (almh)</p>
                 </div>
               </div>
             </div>
@@ -145,7 +156,7 @@
             <h2>Akad</h2>
             <div class="date_akad" >
               <p>Saturday</p>
-              <p>09.00 - 09.30 Wib</p>
+              <p>09.00 - 09.30 WIB</p>
             </div>
           </div>
           <div class="event_date">
@@ -157,7 +168,7 @@
               <h2>Resepsi</h2>
               <div class="date_ceremony">
                 <p>Saturday</p>
-                <p>10.00 - 13.00 Wib</p>
+                <p>10.00 - 13.00 WIB</p>
               </div>
             </div>
         </div>
@@ -242,8 +253,8 @@
 
     <!--==================== VIDEO ====================-->
     <section class="video section">
-      <input type="button" value="PLAY" onfocus="play()">
-      <audio id="audio" src="assets/audio/audio.mp3" loop></audio>
+      <!-- <input type="button" value="PLAY" onfocus="play()">
+      <audio id="audio" src="assets/audio/audio.mp3" loop></audio> -->
       <h2 class="section__title">Short Video</h2>
 
       <div class="video__container container">

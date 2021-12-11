@@ -9,17 +9,6 @@
   font-size: 3vw;
 }
 
-/* ============ audio======================= */
-.audio {
-  display: flex;
-  align-items: center;
-}
-
-#music {
-  width: 30px;
-  cursor: pointer;
-}
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -372,6 +361,7 @@ input {
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: 0.3s;
+  border-radius: 137.5px;
 }
 
 .button:hover {
@@ -394,7 +384,38 @@ input {
 }
 
 /*=============== ABOUT ===============*/
-.about__data {
+/* .act-btn {
+  background: green;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none; */
+  transition: ease all 0.3s;
+  position: fixed;
+  left: 30px;
+  bottom: 50%;
+  opacity: 0.3;
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  padding: 0.5rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  bottom: 5rem;
+} 
+.act-btn:hover {
+  background: blue;
+}  */
+
+Resources .about__data {
   text-align: center;
 }
 .about__data {
