@@ -21,6 +21,33 @@
     <title>Wedding Invitation Ardi & Nike</title>
   </head>
   <body>
+    
+    <!--=============== MODAL POP UP AUTO ===============-->
+    <div class="container-popup">
+      <div class="popup">
+        <div class="contentBox">
+          <div class="close"></div>
+          <div class="imgBx">
+            <img src="assets/img/wedding.png" />
+          </div>
+          <div class="content">
+            <div>
+              <h3>Wedding Invitation</h3><br>
+              <p>
+                <h2>Nike & Ardi</h2>
+              </p>
+              <p>We invite you to join our wedding</p>
+              <a href="#" class="button_main" value="PLAY" onfocus="play()">JOIN US</a>
+              <audio id="audio" src="assets/audio/audio.mp3" loop></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--=============== END MODAL POP UP AUTO ===============-->
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#home" class="nav__logo" id="logo-name">Nike & Ardi</a>
@@ -42,7 +69,7 @@
               <a href="#invitation" class="nav__link">Invitation</a>
             </li>
             <li class="nav__item">
-              <a href="#save-the-date" class="nav__link">Galery</a>
+              <a href="#galery" class="nav__link">Galery</a>
             </li>
             <li class="nav__item">
               <a href="#map" class="nav__link">Map</a>
@@ -80,8 +107,8 @@
                 With Love</b
               >
             </h1>
-            <a href="#about" class="button" value="PLAY" onfocus="play()">Invite You</a>
-            <audio id="audio" src="assets/audio/audio.mp3" loop></audio>
+            <!-- <a href="#about" class="button" value="PLAY" onfocus="play()">Invite You</a>
+            <audio id="audio" src="assets/audio/audio.mp3" loop></audio> -->
           </div>
           <div class="home__social">
             <a href="#invitation" class="home__social-link">
@@ -99,10 +126,6 @@
 
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
-        <!-- <a href="#" class="act-btn" id=scrlbtn>
-          <i class="fa fa-music"></i>
-        </a> -->
-
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title about__title">Aku Ingin</h2>
@@ -110,7 +133,6 @@
               Aku ingin mencintaimu dengan sederhana dengan kata yang tak sempat diucapkan kayu kepada api yang menjadikannya abu <br /><br />Aku ingin mencintaimu dengan sederhana dengan isyarat yang tak sempat disampaikan awan kepada
               hujan yang menjadikannya tiada.<br /><br />- Sapardi Djoko Damono -
             </p>
-            <!-- <a href="#" class="button">Location</a> -->
           </div>
 
           <div class="about__img">
@@ -289,7 +311,7 @@
         </div>
       </section>
       <!-- =======================MAP==================== -->
-      <section>
+      <section class="map" id="map">
         <div class="mapouter" id="map">
           <div class="gmap_canvas">
             <iframe width="900" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=candiview&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -330,6 +352,6 @@
     <script src="assets/js/main.js"></script>
 
     <!-- =================== sweat alert ================== -->
-    <script src="assets/sweatalert/sweetalert2.all.min.js"></script>
+    <!-- <script src="assets/sweatalert/sweetalert2.all.min.js"></script> -->
   </body>
 </html>

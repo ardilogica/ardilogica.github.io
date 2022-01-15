@@ -113,6 +113,122 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
+/* ===================== MODAL POP UP ============== */
+.container-popup {
+  position: fixed;
+  background-color: #daf7a6;
+  height: 100%;
+  width: 100%;
+  z-index: 15;
+}
+
+.popup {
+  /* top: 50%;
+  left: 50%;
+  z-index: 7; */
+  width: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.contentBox {
+  position: fixed;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-top: 12vw;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contentBox .imgBx {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .imgBx::before {
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e7ffe0;
+  border-radius: 50%;
+}
+
+.contentBox .imgBx img {
+  position: relative;
+  max-width: 250px;
+  z-index: 1;
+}
+
+.contentBox .content {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .content h3 {
+  color: #333;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 2em;
+  justify-content: center;
+}
+
+.contentBox .content h2 {
+  font-size: 3em;
+  color: #ff4d54;
+  line-height: 1em;
+  font-family: Poppins;
+}
+
+/* .contentBox .content h2 span {
+  color: #333;
+  font-size: 0.75em;
+  text-transform: uppercase;
+} */
+
+.contentBox .content p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.contentBox .content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: chartreuse;
+  color: #fff;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3 url(close.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -203,7 +319,7 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 3;
   background-color: transparent;
 }
 
@@ -384,19 +500,7 @@ input {
 }
 
 /*=============== ABOUT ===============*/
-/* .act-btn {
-  background: green;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-decoration: none; */
+.act-btn {
   transition: ease all 0.3s;
   position: fixed;
   left: 30px;
@@ -410,12 +514,11 @@ input {
   z-index: var(--z-tooltip);
   transition: 0.4s;
   bottom: 5rem;
-} 
+}
 .act-btn:hover {
   background: blue;
-}  */
-
-Resources .about__data {
+}
+*/ Resources .about__data {
   text-align: center;
 }
 .about__data {
@@ -1272,3 +1375,136 @@ h2 a:hover {
     height: 640px;
   }
 }
+
+/* ============ MOdal Popup Responsive ========= */
+@media (max-width: 768px) {
+  .contentBox {
+    width: 50vw;
+    margin-top: 30vh;
+    /* margin-bottom: 300vh; */
+    /* margin-left: 17vh; */
+    margin-right: 10vh;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contentBox .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
+    /* margin-left: 2vh; */
+    margin-bottom: 4vh;
+    width: auto;
+  }
+
+  .contentBox .imgBx::before {
+    background: rgb(221, 103, 6);
+  }
+
+  .contentBox .content {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 30px;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .close {
+    top: -50px;
+    right: -10px;
+    background: #fff url(love.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .contentBox {
+    width: 70vw;
+    margin-top: 30vh;
+    /* margin-right: 20vw; */
+    margin-left: 18vw;
+    height: 40vh;
+    flex-direction: column;
+  }
+
+  .contentBox .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
+    /* margin-left: 2vh; */
+    margin-bottom: 4vh;
+    width: auto;
+  }
+
+  .contentBox .imgBx::before {
+    background: rgb(233, 113, 14);
+  }
+
+  .contentBox .content {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 10px;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .content {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .content h3 {
+    font-family: 'Dancing Script';
+  }
+
+  /* .content .popuptitle h2 {
+    font-family: 'Dancing Script';
+  } */
+
+  .close {
+    top: -50px;
+    right: -10px;
+    background: #fff url(love.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+  }
+}
+
+/* @media screen and (min-width: 320px) {
+  .contentBox {
+    width: 300px;
+    margin-top: 56vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contentBox .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
+  }
+
+  .contentBox .imgBx::before {
+    background: rgb(209, 28, 28);
+  }
+
+  .contentBox .content {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .close {
+    top: -50px;
+    right: -10px;
+    background: rgb(139, 133, 133) url(love.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+  }
+} */
