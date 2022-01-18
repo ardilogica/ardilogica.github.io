@@ -116,7 +116,7 @@ body.dark-theme {
 /* ===================== MODAL POP UP ============== */
 .container-popup {
   position: fixed;
-  background-color: #daf7a6;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
   z-index: 15;
@@ -1418,7 +1418,7 @@ h2 a:hover {
 
 @media (max-width: 375px) {
   .contentBox {
-    background-color: red;
+    background-color: #fffaf0;
     width: 70vw;
     margin-top: 30vh;
     margin-left: 18vw;
@@ -1474,7 +1474,7 @@ h2 a:hover {
     width: 70vw;
     margin-top: 30vh;
     margin-left: 18vw;
-    height: 40vh;
+    height: 50vh;
     flex-direction: column;
   }
 
@@ -1486,7 +1486,7 @@ h2 a:hover {
   }
 
   .contentBox .imgBx::before {
-    background: rgb(233, 113, 14);
+    background: rgb(211, 7, 7);
   }
 
   .contentBox .content {
@@ -1516,38 +1516,3 @@ h2 a:hover {
     background-position: center;
   }
 }
-/* @media screen and (min-width: 320px) {
-  .contentBox {
-    width: 300px;
-    margin-top: 56vw;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    height: auto;
-    flex-direction: column;
-  }
-
-  .contentBox .imgBx {
-    height: 200px;
-    transform: translateY(-50px);
-  }
-
-  .contentBox .imgBx::before {
-    background: rgb(209, 28, 28);
-  }
-
-  .contentBox .content {
-    height: auto;
-    text-align: center;
-    padding: 20px;
-    padding-top: 0;
-  }
-
-  .close {
-    top: -50px;
-    right: -10px;
-    background: rgb(139, 133, 133) url(love.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-  }
-} */

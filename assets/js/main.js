@@ -271,6 +271,11 @@ window.onload = function () {
 
     // Add some time dellay to show pop up
   }, 200);
+  // function noscroll() {
+  //   window.scrollTo(0, 0);
+  // }
+
+  // window.addEventListener('scroll', noscroll);
 };
 
 close.addEventListener('click', () => {
