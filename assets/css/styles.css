@@ -1381,8 +1381,6 @@ h2 a:hover {
   .contentBox {
     width: 50vw;
     margin-top: 30vh;
-    /* margin-bottom: 300vh; */
-    /* margin-left: 17vh; */
     margin-right: 10vh;
     height: auto;
     flex-direction: column;
@@ -1391,7 +1389,6 @@ h2 a:hover {
   .contentBox .imgBx {
     height: 200px;
     transform: translateY(-50px);
-    /* margin-left: 2vh; */
     margin-bottom: 4vh;
     width: auto;
   }
@@ -1419,11 +1416,11 @@ h2 a:hover {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 375px) {
   .contentBox {
+    background-color: red;
     width: 70vw;
     margin-top: 30vh;
-    /* margin-right: 20vw; */
     margin-left: 18vw;
     height: 40vh;
     flex-direction: column;
@@ -1432,7 +1429,58 @@ h2 a:hover {
   .contentBox .imgBx {
     height: 200px;
     transform: translateY(-50px);
-    /* margin-left: 2vh; */
+    margin-bottom: 4vh;
+    width: auto;
+  }
+
+  .contentBox .imgBx::before {
+    background: rgb(224, 40, 8);
+  }
+
+  .contentBox .content {
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 10px;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .content {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .content h3 {
+    font-family: 'Dancing Script';
+  }
+
+  .close {
+    top: -50px;
+    right: -10px;
+    background: #fff url(love.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+  }
+}
+
+@media (min-width: 320px) {
+  .container-popup {
+    top: 0;
+    bottom: 0;
+  }
+  .contentBox {
+    width: 70vw;
+    margin-top: 30vh;
+    margin-left: 18vw;
+    height: 40vh;
+    flex-direction: column;
+  }
+
+  .contentBox .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
     margin-bottom: 4vh;
     width: auto;
   }
@@ -1459,10 +1507,6 @@ h2 a:hover {
     font-family: 'Dancing Script';
   }
 
-  /* .content .popuptitle h2 {
-    font-family: 'Dancing Script';
-  } */
-
   .close {
     top: -50px;
     right: -10px;
@@ -1472,7 +1516,6 @@ h2 a:hover {
     background-position: center;
   }
 }
-
 /* @media screen and (min-width: 320px) {
   .contentBox {
     width: 300px;
