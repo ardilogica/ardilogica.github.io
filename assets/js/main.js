@@ -270,7 +270,7 @@ window.onload = function () {
     popup.style.display = 'block';
 
     // Add some time dellay to show pop up
-  }, 200);
+  }, 50);
   // function noscroll() {
   //   window.scrollTo(0, 0);
   // }

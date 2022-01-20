@@ -209,6 +209,7 @@ body.dark-theme {
   padding: 10px 20px;
   background: chartreuse;
   color: #fff;
+  font-size: 20px;
   margin-top: 20px;
   text-decoration: none;
   border-radius: 10px;
@@ -1472,8 +1473,8 @@ h2 a:hover {
   }
   .contentBox {
     width: 70vw;
-    margin-top: 30vh;
-    margin-left: 18vw;
+    margin-top: 28vh;
+    margin-left: 15vw;
     height: 50vh;
     flex-direction: column;
   }
@@ -1514,5 +1515,17 @@ h2 a:hover {
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
+  }
+
+  .contentBox .content a {
+    display: inline-block;
+    padding: 6px 20px;
+    background: rgb(0, 255, 21);
+    color: #fff;
+    font-size: 20px;
+    font-weight: ;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 10px;
   }
 }
