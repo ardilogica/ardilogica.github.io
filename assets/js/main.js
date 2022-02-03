@@ -269,8 +269,8 @@ window.onload = function () {
   setTimeout(function () {
     popup.style.display = 'block';
 
-    // Add some time dellay to show pop up
-  }, 50);
+    // Add some time dellay to show pop up (semakin besar angka delay semakin lama munculnya )
+  }, 1);
   // function noscroll() {
   //   window.scrollTo(0, 0);
   // }
