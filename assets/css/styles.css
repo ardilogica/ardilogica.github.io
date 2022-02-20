@@ -429,7 +429,7 @@ input {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  object-position: 83%;
+  object-position: 33%; /*buat resize gambar dashboard awal saat di viewport hp*/
 }
 
 .home__container {
