@@ -356,7 +356,7 @@ input {
     background-color: var(--body-color);
     top: 0;
     right: -100%;
-    width: 65%;
+    width: 70%;
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
@@ -985,7 +985,7 @@ h2 a {
 
 /* Show scroll */
 .show-scroll {
-  bottom: 6rem;
+  bottom: 5rem;
 }
 
 /*=============== SCROLL BAR ===============*/
