@@ -270,7 +270,7 @@ window.onload = function () {
     popup.style.display = 'block';
 
     // Add some time dellay to show pop up (semakin besar angka delay semakin lama munculnya )
-  }, 1);
+  }, 0);
   // function noscroll() {
   //   window.scrollTo(0, 0);
   // }
