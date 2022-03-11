@@ -700,6 +700,7 @@ input {
 .discover__description {
   display: block;
   font-size: var(--smaller-font-size);
+  /* color: #03332b; */
 }
 
 .discover__img {
